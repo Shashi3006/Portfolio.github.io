@@ -149,6 +149,25 @@
     nav .logo{
         margin-right: 0.5rem;
     }
+    .content h1{
+        font-size: 6vw;
+    }
+    .content h2{
+        font-size: 4vw;
+        color: rgb(3, 105, 145);
+    }
+    .content h3{
+        font-size: 2.1vw;
+    }
+    .content h5{
+        font-size: 1.6vw;
+    }
+    #aboutMe{
+        padding-top: 80px;
+      }
+      .descAboutMe p{
+       font-size: 2vh;
+    }
      /* --------media query for project section----  */
      #projects{
         padding-bottom: 0;
