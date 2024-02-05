@@ -163,10 +163,28 @@
         font-size: 1.6vw;
     }
     #aboutMe{
-        padding-top: 80px;
+        padding-top: 14rem;
       }
       .descAboutMe p{
        font-size: 2vh;
+    }
+    .myImageContainer{
+        position: relative;
+    
+    }
+    .myworkingImage{
+        height: 55vh;
+        width: 80%;
+        border-radius: 10%;
+        position: relative;
+    }
+    .myImage{
+        height: 55vh;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
      /* --------media query for project section----  */
      #projects{
@@ -178,8 +196,8 @@
         gap: 2rem;
     }
     .portfolio-container .portfolio-cards{
-        width: 35rem;
-        height: 28rem;
+        width: 29rem;
+        height: 24rem;
         position: relative;
         left: 5.5rem;
     }
