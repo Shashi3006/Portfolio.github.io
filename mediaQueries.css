@@ -147,7 +147,7 @@
   /* --------------mobile view----------------  */
   @media (max-width:690px) {
     nav .logo{
-        margin-right: 20%;
+        margin-right: 5%;
     }
      /* --------media query for project section----  */
      #projects{
