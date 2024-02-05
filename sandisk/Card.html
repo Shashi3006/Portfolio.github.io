@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+        <div class="Imagecontainer">
+        <img src="pendrive.jpg" alt="pendrive" class="pendriveImage">
+      </div>
+        <div class="nav_container">
+            <ul class="nav nav-tabs">
+              <li class="active tabmenu"><a data-toggle="tab" href="#GB32">32GB</a></li>
+              <li class="tabmenu"><a data-toggle="tab" href="#GB64">64GB</a></li>
+              <li class="tabmenu"><a data-toggle="tab" href="#GB128">128GB</a></li>
+              <li class="tabmenu"><a data-toggle="tab" href="#GB256">256GB</a></li>
+            </ul>
+          
+            <div class="tab-content">
+              <div id="GB32" class="tab-pane fade in active">
+                <h4>Sandisk 32 GB USB Red Pen Drive</h4>
+                <p><h4>Features</h4>
+                    <ul>
+                        <li>Color :	Red</li> 
+                        <li>Capacity :	32 GB</li>
+                        <li>Hardware Interface :	USB</li> 
+                        <li>Material :	Plastic</li> 
+                        <li>Data Transfer Rate :	22 Mbps</li> 
+                </ul>
+                    </p>
+                 <div class="pricing">   
+                <div class="discountPrice">
+                    <strong class="mrp">MRP: &#x20b9;1100</strong>
+                    <button type="button" class="btn-outline-danger dealOfTheDay">Deal of the day</button>
+                    <span class="Dpercent">34.77% OFF</span><del class="oldPrice">&#x20b9;538</del>
+                    <ins class="newprice">Exciting Price:-&#x20b9;325</ins><span>（GST inclusive price）</span>
+                </div>
+                <div class="quantityInfo">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" min="1" max="10"><span>Maximum upto 10 piece</span>
+                </div>
+               </div>
+                <div>
+                    <input type="button" value="BUY NOW" onclick="details()" class="Purchasebtn">
+                </div>
+                </div>
+
+                <div id="GB64" class="tab-pane fade in active">
+                    <h4>SanDisk Cruzer Blade 64GB USB 2.0 Flash Drive</h4>
+                    <p><h4>Features</h4>
+                        <ul>
+                            <li>Color :	Red</li> 
+                            <li>Capacity :	64 GB</li>
+                            <li>Hardware Interface :	USB 2.0</li> 
+                            <li>Special Feature	Shockproof, Compact, Portable, Encrypted</li> 
+                            <li>Write Speed	4x</li> 
+                    </ul>
+                        </p>
+                     <div class="pricing">   
+                    <div class="discountPrice">
+                        <strong class="mrp">MRP: &#x20b9;1500</strong>
+                        <button type="button" class="btn-outline-danger dealOfTheDay">Deal of the day</button>
+                        <span class="Dpercent">61.09% OFF</span><del class="oldPrice">&#x20b9;1100</del>
+                        <ins class="newprice">Exciting Price:-&#x20b9;429</ins><span>（GST inclusive price）</span>
+                    </div>
+                    <div class="quantityInfo">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="quantity" min="1" max="10"><span>Maximum upto 10 piece</span>
+                    </div>
+                   </div>
+                    <div>
+                        <input type="button" value="BUY NOW" onclick="details()" class="Purchasebtn">
+                    </div>
+               </div>
+
+                    <div id="GB128" class="tab-pane fade in active">
+                        <h4>Sandisk 128 GB USB 2.0 Black and Red Pen Drive</h4>
+                        <p><h4>Features</h4>
+                            <ul>
+                        <li>Color :	Black and Red</li> 
+                        <li>Capacity :	128 GB</li>
+                        <li>Hardware Interface :	USB 2.0</li> 
+                        <li>Material :	Plastic</li> 
+                        <li>Weight :	200g</li> 
+                      </ul>
+                            </p>
+                         <div class="pricing">   
+                        <div class="discountPrice">
+                            <strong class="mrp">MRP: &#x20b9;2090</strong>
+                            <button type="button" class="btn-outline-danger dealOfTheDay" id="deal128">Deal of the day</button>
+                            <span class="Dpercent">34.77% OFF</span><del class="oldPrice">&#x20b9;1589</del>
+                            <ins class="newprice">Exciting Price:-&#x20b9;989</ins><span>（GST inclusive price）</span>
+                        </div>
+                        <div class="quantityInfo">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="quantity" min="1" max="10"><span>Maximum upto 10 piece</span>
+                        </div>
+                       </div>
+                        <div>
+                            <input type="button" value="BUY NOW" onclick="details()" class="Purchasebtn">
+                        </div>
+                    </div>
+
+                    <div id="GB256" class="tab-pane fade in active">
+                        <h4>Sandisk 256 GB USB 3.0 Black Pen Drive</h4>
+                        <p><h4>Features</h4>
+                            <ul>
+                                <li>Color :	Black and Red</li> 
+                                <li>Capacity :	256 GB</li>
+                                <li>Form Factor :	Capless-Swivel</li> 
+                                <li>Hardware Interface :	USB 2.0</li> 
+                                <li>Model Name :	Ultra Dual Go</li> 
+                        </ul>
+                            </p>
+                         <div class="pricing">   
+                        <div class="discountPrice">
+                            <strong class="mrp">MRP: &#x20b9;5300</strong>
+                            <button type="button" id="deal256" class="btn-outline-danger dealOfTheDay">Deal of the day</button>
+                            <span class="Dpercent">56.98% OFF</span><del class="oldPrice">&#x20b9;3309</del>
+                            <ins class="newprice">Exciting Price:-&#x20b9;2280</ins><span>（GST inclusive price）</span>
+                        </div>
+                        <div class="quantityInfo">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="quantity" min="1" max="10"><span>Maximum upto 10 piece</span>
+                        </div>
+                    </div>
+                        <div>
+                            <input type="button" value="BUY NOW" onclick="details()" class="Purchasebtn">
+                        </div>
+                    </div>
+
+          </div>
+    </div>
+</div>
+
+    <script src="card.js"></script>
+</body>
+</html>

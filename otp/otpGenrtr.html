@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="otpGenrtr.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">OTP Generator</h1>
+        <h3 id="heading3"> Your OTP is: <span id="uniqueOTP"></span></h3>
+        <input type="text" id="inputOTP">
+        <input type="button" value="Verify" id="verifyBtn">
+        <h4 class="displayOTPAction"></h4>
+    </div>
+
+
+    <script>
+      let generatedOTP = document.querySelector("#uniqueOTP");
+      let matchOTP = document.querySelector("#inputOTP");
+      let verify = document.querySelector("#verifyBtn"); 
+      let generateNewOTP;
+      setInterval(generteOTP,6500)
+      
+      verify.addEventListener('click',verifyOTP)
+
+      function generteOTP(){
+        generateNewOTP = Math.floor((Math.random()*9000)+1000);
+        generatedOTP.innerHTML = generateNewOTP;
+      }
+
+      function verifyOTP(){
+      let displayOTPAction = document.querySelector(".displayOTPAction");
+      let toVerifyOTP = matchOTP.value;
+      console.log(toVerifyOTP);
+
+
+      if(generateNewOTP == toVerifyOTP){
+           displayOTPAction.innerHTML = "Your OTP is registerd successfully";
+           displayOTPAction.style.backgroundColor = 'white';
+           displayOTPAction.style.color = 'green';
+      }
+      else{
+           displayOTPAction.innerHTML = "Sorry!! Your OTP is rejected";
+           displayOTPAction.style.backgroundColor = 'white';
+           displayOTPAction.style.color = 'red';
+      }
+      }
+
+    </script>
+</body>
+</html>

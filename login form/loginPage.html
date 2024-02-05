@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div><img src="sphere_1.png" alt="" class="sphere" id="sphere1" /></div>
+        <div><img src="sphere_1.png" alt="" class="sphere" id="sphere2" /></div>
+        <div><img src="sphere_1.png" alt="" class="sphere" id="sphere3" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere4" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere5" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere6" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere7" /></div>
+        <!-- <div class="formBackground"></div> -->
+        <div class="form">
+          <form action="displayLogin.html" method="post" target="_blank" id="loginForm">
+            <h2>Login</h2>
+            <input
+              type="text"
+              class="userInputField"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="email"
+              class="userInputField"
+              id="mailId"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              class="userInputField"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <div class="forgotPassword">Forgot password?</div>
+            <input type="submit" value="SUBMIT" id="submitBtn">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+body{
+    background-image: url(parking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobilecover{
+    margin: auto;
+    height: 600px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: inset 3px 3px 1000px #000;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.switch{
+    height: 100px;
+    width: 3px;
+    /* background-color: #918f8f; */
+    background-color: #383636;
+    position: absolute;
+    top: 130px;
+    right: -3px;
+}
+.volume{
+    height: 45px;
+    width: 3px;
+    background-color: #383636;
+    /* background-color: #918f8f; */
+    position: absolute;
+    top: 130px;
+    left: -3px;
+}
+.volumeDecrease{
+    margin-top: 60px;
+    background-color: #383636;
+    /* background-color: #918f8f; */
+}
+.camera{
+    height: 13px;
+    width: 140px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #383636f6;
+    /* background-color: #b3b0b0; */
+    position: absolute;
+    top:10.4px;
+}
+.innerScreen{
+    height: 580px;
+    width: 280px;
+    border: 0.5px solid #b3b0b0;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 3px solid #206b33;
+}
+.title img{
+    height: 45px;
+    width: 170px;
+}
+.timeSection{
+   height: 80%;
+   width: 95%;
+   margin-bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+#receipt{
+    margin-top: -80px;
+}
+.twoWheeler{
+    height: 150px;
+    width: 230px;
+    border: 1px solid #b3b0b0;
+    margin-bottom: 20px;
+}
+.parkingValueSection{
+    width: 100%;
+    height: 50%;
+    margin-bottom: -140px;
+}
+.parkingValueDesc{
+    display: flex;
+
+}
+.parkingValueDesc h6{
+    font-size: 14px;
+    margin-top: 6px;
+}
+.hrsValues{
+    border-radius: 8px;
+    border-width: 0.5px;
+    height: 30px;
+    width: 150px;
+    margin-left: 25px;
+    font-size: 13px;
+}
+.inputValue{
+    border-radius: 8px;
+    height: 35px;
+    width: 60px;
+    margin-top: 15px;
+    margin-left: 85px;
+    text-align: center;
+}
+
+#btn{
+    margin: 20px 0;
+    border-radius: 20px;
+    width: 100px;
+    border-color: #206b33;
+    background-color: #206b33;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

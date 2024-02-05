@@ -1,0 +1,90 @@
+.card{
+    margin: 40px auto;
+    height: 80%;
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #bdb5b5;
+    box-shadow: 8px 8px 5px #bdb5b5;
+}
+.pendriveImage:hover{
+    height: 210px;
+    width: 210px;
+}
+.Imagecontainer{
+    margin: auto;
+    height: 170px;
+    width: 170px;
+}
+.pendriveImage{
+    height: 170px;
+    width: 170px;
+    background-color: #bdb5b5;
+    transition: all 1s ease-in-out;
+}
+.nav_container{
+    margin-top: 20px;
+}
+.tabmenu{
+    height: 40px;
+    width: 65px;
+    border: 2px solid rgb(197, 197, 133);
+    background-color:rgb(197, 197, 133);
+    opacity: 0.9;
+}
+.pricing{
+    /* width: 450px; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.quantityInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.quantity{
+    width: 80px;
+    height: 25px;
+}
+.discountPrice{
+    display: flex;
+    flex-direction: column;
+}
+.mrp{
+    font-size: 20px;
+}
+.Dpercent{
+    color: red;
+}
+.newprice{
+    font-size: 22px;
+    text-decoration: none;
+    margin: 10px 10px 0 0;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Purchasebtn{
+    margin: 10px;
+    padding: 10px;
+    background-image: radial-gradient(rgb(135, 180, 135), rgb(131, 167, 131));
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+}
+#deal128{
+    background-image: linear-gradient(rgb(52, 52, 211),rgb(11, 136, 136));
+    color: #fff;
+}
+#deal256{
+    background-image: linear-gradient(rgb(204, 123, 123), rgb(189, 151, 80));
+    color: #fff;
+}
+.dealOfTheDay{
+    height: 40px;
+    width: 150px;
+    background-image: linear-gradient(rgb(130, 147, 158),rgb(150, 181, 184));
+    border: 2px dotted red;
+    border-radius: 10px;
+}

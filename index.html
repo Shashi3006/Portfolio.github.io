@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="Image/jpg" href="./Images/favicon.ico">
+
+     <!-- -----Bootstrap 5 CDN links----- -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+     <!-- Custom CSS links  -->
+     <link rel="stylesheet" href="portfolio.css">
+     <link rel="stylesheet" href="backgrnd.css">
+     <link rel="stylesheet" href="navigation.css">
+     <link rel="stylesheet" href="mediaQueries.css">
+     
+</head>
+<body>
+            <nav class="navbar navbar-expand-lg fixed-top">
+              <div class="container">
+                <a class="logo" href="#">SMourya</a>
+                                             
+                <div class="collapse navbar-collapse justify-content-end">
+                  <div class="navigation">
+                    <ul class="navbar-nav">
+                      <li class="nav-item list active">
+                        <a class="nav-link" href="#homePage">
+                          <span class="icon"
+                            ><ion-icon name="home-outline"></ion-icon
+                          ></span>
+                          <span class="text">Home</span>
+                        </a>
+                      </li>
+                      <li class="nav-item list">
+                        <a class="nav-link" href="#aboutMe">
+                          <span class="icon"
+                            ><ion-icon name="person"></ion-icon
+                          ></span>
+                          <span class="text">About</span>
+                        </a>
+                      </li>
+                      <li class="nav-item list">
+                        <a class="nav-link" href="#skills">
+                          <span class="icon"
+                            ><ion-icon name="star"></ion-icon
+                          ></span>
+                          <span class="text">Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-item list">
+                        <a class="nav-link" href="#projects">
+                          <span class="icon"
+                            ><ion-icon name="book-outline"></ion-icon
+                          ></span>
+                          <span class="text">Projects</span>
+                        </a>
+                      </li>
+                      <li class="nav-item list">
+                        <a class="nav-link" href="#contact">
+                          <span class="icon"
+                            ><ion-icon name="call"></ion-icon
+                          ></span>
+                          <span class="text">Contact</span>
+                        </a>
+                      </li>
+                      <div class="indicator"></div>
+                    </ul>
+                  </div>
+                  
+                </div>
+               
+                  <div class="hamburger-menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  <nav class="hamburger-nav">
+                    <ul class="menu-links">
+                          <li><a href="#homePage">Home</a></li>
+                          <li><a href="#aboutMe">About</a></li>
+                          <li><a href="#skills">Skills</a></li>
+                          <li><a href="#projects">Projects</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                      </ul>
+                  </nav> 
+                </nav>
+                
+              </div>
+            <!-- </nav>
+            <nav class="hamburger-nav">
+                <ul class="menu-links">
+                      <li><a href="#homePage" onclick="toggleMenu()">Home</a></li>
+                      <li><a href="#aboutMe" onclick="toggleMenu()">About</a></li>
+                      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                  </ul>
+              </nav> -->
+                  
+    <!-- <div id="homePage"> -->
+      <section id="homePage" class="CloudContainer">
+            <div class="clouds">
+                <span style="--i:4"><img src="Images/Img1.png" alt="Image1"></span>
+                <span style="--i:3"><img src="Images/Img2.png" alt="Image2"></span>
+                <span style="--i:2.2"><img src="Images/Img1.png" alt="Image3"></span>
+                <span style="--i:10"><img src="Images/Img1.png" alt="Image1"></span>
+                <span style="--i:4"><img src="Images/Img1.png" alt="Image1"></span>
+                <span style="--i:4"><img src="Images/Img1.png" alt="Image1"></span>
+                <span style="--i:2.2"><img src="Images/Img2.png" alt="Image2"></span>
+                <span style="--i:6"><img src="Images/Img1.png" alt="Image3"></span>
+                <span style="--i:2.9"><img src="Images/Img2.png" alt="Image2"></span>
+                <span style="--i:2.2"><img src="Images/Img1.png" alt="Image3"></span>
+                <span style="--i:4"><img src="Images/Img1.png" alt="Image1"></span>
+                <span style="--i:3"><img src="Images/Img2.png" alt="Image2"></span>
+                <span style="--i:2.2"><img src="Images/Img1.png" alt="Image3"></span>
+                <span style="--i:4"><img src="Images/Img1.png" alt="Image1"></span>
+                <span style="--i:2.2"><img src="Images/Img2.png" alt="Image2"></span>
+                <span style="--i:6"><img src="Images/Img1.png" alt="Image3"></span>
+                <span style="--i:10"><img src="Images/Img1.png" alt="Image1"></span> 
+                <span style="--i:2.2"><img src="Images/Img2.png" alt="Image2"></span>
+                <span style="--i:6"><img src="Images/Img1.png" alt="Image3"></span>
+                <span style="--i:10"><img src="Images/Img1.png" alt="Image1"></span>
+            </div>
+
+            <div class="container profile">
+                <div class="content">
+                  <h1>Hi There!! Here, </h1>
+                  <h2>Shashikala N Mourya </h2>
+                  <h3> A passionate <span id="element"></span></h3>
+                  <h5>I love building beautiful and functional websites.</h5> 
+                  <button class="main-btn">download cv</button>
+                </div>
+                <div class="imageContainer">
+                    <img src="./Images/intro.png" alt="clipArt Image">
+                </div>
+            </div>
+
+        </section>
+    <!-- </div> -->
+
+
+    <!-- -----------about section------- -->
+       <section id="aboutMe">
+        <div class="container aboutOfContent">
+           <div class="descAboutMe">
+            <h6>Introduction</h6> 
+            <div class="title">Who am I</div>
+              <p>Enthusiastic frontend developer eager to contribute to team success through hardwork, attention to detail, and
+                excellent organisational skills. During my years in college/university, I'd not only spend my time in academics, but I also made it a point to learn things
+                outside the stipulated syllabus. Since I had to fit so many things on my plate simultaneously to satiate my urge for
+                learning, I have learned the art of time management. I have also completed a 6 months internship as a web developer. On the other hand, I
+                am a self-motivated person and I try to exceed my superior's expectations with hardwork</p>
+           </div>
+    
+           <div class="myImageContainer">
+            <img src="./Images/me2.jpg" alt="working"class="myworkingImage">
+            <img src="./Images/me1.jpeg" alt="me" class="myImage">
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- -------------skills section---------------- -->
+    <section id="skills">
+      <div class="container">
+      <div class="skillSection">
+         <h2 class="title">Skills</h2>
+      </div>
+      <div class="listOfSkills">
+          <div class="cards">
+              <img src="./Images/html.png" alt="html" class="logoImage">
+              <h2 class="heading">HTML5</h2>
+              <h5 class="subheading">HyperText Markup Language</h5>
+              <p class="description">Creates structure of a webpage</p>
+              <p class="description">Fifth and current version</p>
+              <p class="description">Supports multimedia</p>
+              <p class="description">Geo-location services</p>
+          </div>
+          <div class="cards">
+              <img src="./Images/css.png" alt="css" class="logoImage">
+              <h2 class="heading">CSS</h2>
+              <h5 class="subheading">Cascading Style Sheet</h5>
+              <p class="description">Superior styling to HTML</p>
+              <p class="description">Supports Internal & External CSS</p>
+              <p class="description">Easy maintenance</p>
+              <p class="description">Saves time</p>
+          </div>
+          <div class="cards">
+              <img src="./Images/js.png" alt="js" class="logoImage">
+              <h2 class="heading">Javascript</h2>
+              <h5 class="subheading">Scripting Language</h5>
+              <p class="description">Creating dynamic web pages</p>
+              <p class="description">Supports Internal & External js</p>
+              <p class="description">Performs form validation using Regex</p>
+              <p class="description">No compiler is needed</p>
+          </div>
+          <div class="cards">
+            <img src="./Images/reactlogo.png" alt="bootstrap" class="logoImage">
+            <h2 class="heading">React js</h2>
+            <h5 class="subheading">Free & open-source front-end JavaScript library</h5>
+            <p class="description">Used to develop Single Page Applications(SPA)</p>
+            <p class="description">Used to develop User Interface</p>
+            <p class="description">To make responsive websites</p>
+            <p class="description">Made of modular and reusable entities called components.</p>
+        </div>
+          <div class="cards">
+              <img src="./Images/java.png" alt="java" class="logoImage">
+              <h2 class="heading">Java</h2>
+              <h5 class="subheading">Class-based Object-oriented language</h5>
+              <p class="description">Creating and handling backend</p>
+              <p class="description">Platform-Independent</p>
+              <p class="description">Robust & Secure</p>
+              <p class="description">Supports Multithreading</p>
+          </div>
+          <div class="cards">
+              <img src="./Images/sql.webp" alt="sql" class="logoImage">
+              <h2 class="heading">SQL</h2>
+              <h5 class="subheading">Structured Query Language</h5>
+              <p class="description">Communicate with relational Database</p>
+              <p class="description">Creation and Manipulation of Database</p>
+              <p class="description">Retrieval of data from database</p>
+              <p class="description">Stores data in the form of tables</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="portfolio" id="projects">
+      <div class="container">
+      <h1 class="heading">My Hardwork</h1>
+      <div class="portfolio-container">
+        <div class="portfolio-cards">
+            <img src="./Images/loginForm.png" alt="loginForm">
+            <div class="portfolio-layer">
+              <h4>Login form</h4>
+              <p>To authenticate users and grant them access to restricted areas of a website, Login forms are used. The form will post the data to the route we specified in the action attribute. </p>
+              <a href="./login form/loginPage.html" target="_blank"><ion-icon name="arrow-redo-sharp" class="ionIcon"></ion-icon></a>
+            </div>
+        </div>
+        <div class="portfolio-cards">
+          <img src="./Images/parking.jpg" alt="parkingLot">
+          <div class="portfolio-layer">
+            <h4>Parking Receipt</h4>
+            <p>A customer can generate his/her own parking receipt for about any long time, therefore being charged accordingly. For this, the person has to install a mobile application available on both android as well as iOS platform.</p>
+            <a href="./receipt/parkingLot.html" target="_blank"><ion-icon name="arrow-redo-sharp" class="ionIcon"></ion-icon></a>
+          </div>
+      </div>
+      <div class="portfolio-cards">
+        <img src="./Images/csstyle.webp" alt="css">
+        <div class="portfolio-layer">
+          <h4>HTML+CSS</h4>
+          <p>HTML and CSS work together to design a beautiful frontend application.Every beginner’s coding journey in frontend starts with these two basic building blocks and you need to be creative when it comes to designing a beautiful application. </p>
+          <a href="./CSS project/progresstab.html" target="_blank"><ion-icon name="arrow-redo-sharp" class="ionIcon"></ion-icon></a>
+        </div>
+    </div>
+    <div class="portfolio-cards">
+      <img src="./Images/otpGen.webp" alt="otpGen">
+      <div class="portfolio-layer">
+        <h4>OTP Generator</h4>
+        <p>The project aims to generate a One Time Password using JavaScript. The password generator is designed to generate a password of length 4.</p>
+        <a href="./otp/otpGenrtr.html" target="_blank"><ion-icon name="arrow-redo-sharp" class="ionIcon"></ion-icon></a>
+      </div>
+  </div>
+  <div class="portfolio-cards">
+    <img src="./Images/digi-clock.webp" alt="Digital-clock">
+    <div class="portfolio-layer">
+      <h4>Digital-clock</h4>
+      <p>This project is about a digital clock that displays the time. The clock works in 12-hour mode and uses an RTC (Real Time Clock) to display the time data accurately. </p>
+      <a href="./Clock/clock.html" target="_blank"><ion-icon name="arrow-redo-sharp" class="ionIcon"></ion-icon></a>
+    </div>
+</div>
+
+      </div>
+    </div>
+    </section>
+      
+
+
+      <!-- --------------contact section---------  -->
+
+      <section id="contact">
+        <h1>Contact me</h1> 
+        <h3><ion-icon name="caret-down-outline"></ion-icon></h3>
+        <div class="contactDetails">
+          <div class="email">
+            <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon> Email</span>
+            <span class="emailadrress">mouryas666@gmail.com</span>
+          </div>
+          <div class="phnumDetails">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon> Phone</span>
+            <span class="phNum">7888217623</span>
+          </div>
+          <div class="socialMedia">
+            <span class="icon"><ion-icon name="share-social-outline"></ion-icon> Social media</span>
+            <span class="linkedIn">
+              <a href="www.linkedin.com/in/shashikala-mourya-017ba422b" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a> 
+            </span>
+          </div>
+        </div>
+        <div class="end">
+          <h2>Thanks for watching!!!</h2>
+          <h6><a href="#homePage">Back to top <ion-icon name="arrow-up-circle-sharp"></ion-icon></a></h6>
+        </div>
+      
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js file for ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    
+<!-- js file for strigns animation -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>

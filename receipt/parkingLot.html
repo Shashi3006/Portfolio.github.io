@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="parking.css">
+    <title>Parking Lot fee</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mobilecover">
+            <div class="switch"></div>
+            <div class="volume"></div>
+            <div class="volume volumeDecrease"></div>
+            <div class="camera"></div>
+            <div class="innerScreen">
+        <div class="title">
+            <img src="logo.png" alt="logo">
+        </div>
+
+        <div class="timeSection">
+            <h6 id="receipt">Parking Lot Receipt</h6>
+            <img src="TW.jpg" alt="" class="twoWheeler">
+            <div class="parkingValueSection">
+                <div class="parkingValueDesc">
+               <h6>Parking time:</h6>
+               <select name="NoOfHours" class="hrsValues">
+                <option value="0" style="display: none;"></option>
+                <option value="1">Less than 1 hr &nbsp; &nbsp; &nbsp;&#x20b9;10</option>
+                <option value="2">1 - 3 hrs &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &#x20b9;30</option>
+                <option value="3">3 - 6 hrs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &#x20b9;60</option>
+                <option value="4">Above 6 hrs &nbsp; &nbsp; &nbsp; &#x20b9;100</option>
+              </select></div>
+              <span style="font-size: 14px;font-weight: 500;">No. of hours: </span> 
+              <input type="text" class="inputValue" required><strong style="margin-left: 3px;">hrs</strong>
+             <div class="result">
+              <input type="button" id="btn" value="Calculate">
+              <h5>Total amount: &#x20b9;<span id="totalAmt"></span></h5></div>
+          </div>
+         </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        let clickBtn = document.querySelector("#btn")
+        clickBtn.addEventListener('click', calcParkValue);
+
+        function calcParkValue()
+        {
+        let hrsValue = document.querySelector(".inputValue").value;//input value
+        let displayTotal = document.querySelector("#totalAmt"); //output
+        let selectedValues = document.querySelector(".hrsValues");
+        let chosenOption = selectedValues.options[selectedValues.selectedIndex].value; //select value
+
+        if(chosenOption == 1 && hrsValue <= 1){
+           
+            displayTotal.innerHTML = 10;
+            console.log(displayTotal)
+           
+        }
+        else if((chosenOption == 2) && (hrsValue > 1 && hrsValue <= 3)){
+            let totalCalculated = hrsValue*30;
+            displayTotal.innerHTML = totalCalculated;
+        }
+        else if((chosenOption == 3) && (hrsValue > 3 && hrsValue <= 6)){
+            let totalCalculated = hrsValue*60;
+            displayTotal.innerHTML = totalCalculated;  
+        }
+        else if(chosenOption == 4 && hrsValue > 6){
+            let totalCalculated = hrsValue*100;
+            displayTotal.innerHTML = totalCalculated;                       
+        }
+        else{
+            alert("You entered a incorrect value in hrs.")
+        }
+        }
+    </script>
+</body>
+</html>

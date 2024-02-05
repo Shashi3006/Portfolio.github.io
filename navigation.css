@@ -1,0 +1,162 @@
+.navbar{
+    /* height: 70px;
+    padding-top: 20px; */
+    padding: 0.5rem 7%;
+}
+.logo{
+  font-size: 5rem;
+  font-family: myFont;
+  color: rgb(3, 105, 145);
+}
+.navigation{
+    width: 400px;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .navigation ul li{
+    list-style: none;
+    height: 65px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .navigation ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* border: 2px solid blue; */
+    position: relative;
+    transition: 0.5s;
+  }
+  .navigation ul li a .icon{
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(3, 105, 145);
+  }
+  .navigation ul li a .text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    position: absolute;
+    font-family: sans-serif;
+    color: rgb(3, 105, 145);
+    opacity: 0;
+  }
+  .navigation ul li.active a .icon{
+    transform: translateY(45px);
+    color: #fff;
+  }
+  .navigation ul li.active a .text{
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+  .indicator{
+    height: 70px;
+    width: 70px;
+    background: rgb(10, 128, 175);
+    position: absolute;
+    border-radius: 100%;
+    top: 50px;
+    transition: 0.3s;
+    border: 6px solid rgb(134, 182, 201);
+  }
+  .navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * -2));
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * -1));
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+  }
+
+
+
+  /* -----------Mobile navigation view-----------  */
+
+  /* -------hamburger icon-------- */
+
+.bar1, .bar2, .bar3 {
+  position: relative;
+  /* right: -13rem; */
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  display: none;
+  transition: 0.4s;
+}
+
+.bar2{
+  width: 25px;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  transform: translateX(60px);
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.menu-links{
+   position:absolute;
+   top: 80px;
+   left: 0;
+   z-index: 50;
+   width: 100%;
+   display: none;
+   background-color: rgb(134, 182, 201);
+  }
+  .change .menu-links{
+    display: block;
+  }
+  .menu-links li{
+    list-style-type: none;
+    font-size: 1.8rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu-links li a{
+    text-decoration: none;
+    background-color: #bbb7b7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
+  }
+ 

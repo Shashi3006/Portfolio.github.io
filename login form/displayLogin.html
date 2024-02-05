@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Details</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div><img src="sphere_1.png" alt="" class="sphere" id="sphere1" /></div>
+        <div><img src="sphere_1.png" alt="" class="sphere" id="sphere2" /></div>
+        <div><img src="sphere_1.png" alt="" class="sphere" id="sphere3" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere4" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere5" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere6" /></div>
+        <div><img src="sphere_2.png" alt="" class="sphere" id="sphere7" /></div>
+        <div class="form">
+          <div class="displayForm">
+            <h2>User Details</h2>
+            <h4>Username: <span id="user"></span></h4>
+            <h4>Email: <span id="mailId"></span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let user = localStorage["userName"];
+      let email = localStorage["email"];
+      let displayUser = document.querySelector("#user");
+      let displayEmail = document.querySelector("#mailId");
+      displayUser.innerHTML = user;
+      displayEmail.innerHTML = email;
+    </script>
+  </body>
+</html>

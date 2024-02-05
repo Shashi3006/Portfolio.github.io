@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(./backgnd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2; */
+}
+@media only screen and (max-width: 768px) { 
+    .background{width: 400px;height: 500px;}
+}
+.background{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.background::before{
+    content: '';
+    background-color: rgba(231, 124, 213, 0.801);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* opacity: 0.5;
+    filter: blur(5px); */
+    border-radius: 25px;
+    z-index: -3;
+}
+.sphere{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: -2;
+}
+#sphere1{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 55px;
+    left: 137px;
+}
+#sphere2{
+    position: absolute;
+    top: -10px;
+    left: 228px;
+}
+#sphere3{
+    position: absolute;
+    top: 321px;
+    left: 86px;
+}
+#sphere4{
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 385px;
+    left: 207px;
+}
+#sphere5{
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 228px;
+    left: 452px;
+}
+#sphere6{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 97px;
+    left: 412px;
+}
+#sphere7{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 530px;
+}
+.form{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid rgb(231, 124, 213);
+    /* opacity: 1; */
+    background-color: rgba(148, 148, 148, 0.25);
+    backdrop-filter: blur(10px);
+}
+#loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: absolute; */
+    /* opacity: 1; */
+}
+#loginForm h2{
+    position: relative;
+    left: -37%;
+}
+.userInputField{
+    height: 30px;
+    width: 220px;
+    margin: 7px 0;
+    padding: 3px 10px;
+    border: none;
+    /* opacity: 1; */
+
+}
+.forgotPassword{
+    position: relative;
+    left: 60px;
+}
+#submitBtn{
+    margin-top: 20px;
+    height: 25px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+}
+.displayForm{
+    height: 35%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.displayForm h2{
+    margin-bottom: 10px;
+}
+.displayForm h2 ~ h4{
+    margin: 2px 0;
+}
